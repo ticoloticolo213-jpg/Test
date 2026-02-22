@@ -159,29 +159,29 @@ local function runQuestLoop()
             warn("Abortando ciclo...")
             break
         end
-        wait(0.5)
+        wait(0.3)
         
         -- ETAPA 2: Aceitar missão do Yuno
         acceptQuestFromYuno()
-        wait(0.5)
+        wait(0.3)
         
         -- ETAPA 3: Teleportar para a madeira
         if not teleportToWood() then
             warn("Abortando ciclo...")
             break
         end
-        wait(0.5)
+        wait(0.3)
         
         -- ETAPA 4: Teleportar para Asta.GIVEMEJUICE
         if not teleportToAstaGiveJuice() then
             warn("Abortando ciclo...")
             break
         end
-        wait(0.5)
+        wait(0.3)
         
         -- ETAPA 5: Entregar missão no Asta
         deliverQuestToAsta()
-        wait(0.5)
+        wait(0.3)
         
         print(">>> CICLO #" .. loopCount .. " COMPLETO <<<\n")
         
